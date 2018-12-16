@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="1. 为什么这样做？&amp;emsp;&amp;emsp;之前使用ssh连接服务器，然后借助jupyter notebook修改服务器代码，然后使用pdb和pdb.set_trace()在终端调试代码。切换成vs code的原因如下：   jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便； 查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明； 调试代码时，查看参数值">
+<meta name="description" content="为什么这样做？&amp;emsp;&amp;emsp;之前使用ssh连接服务器，然后借助jupyter notebook修改服务器代码，然后使用pdb和pdb.set_trace()在终端调试代码。切换成vs code的原因如下：   jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便； 查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明； 调试代码时，查看参数值时不是">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vs code修改、调试服务器代码">
 <meta property="og:url" content="http://yoursite.com/2018/12/16/vsCode/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1. 为什么这样做？&amp;emsp;&amp;emsp;之前使用ssh连接服务器，然后借助jupyter notebook修改服务器代码，然后使用pdb和pdb.set_trace()在终端调试代码。切换成vs code的原因如下：   jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便； 查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明； 调试代码时，查看参数值">
+<meta property="og:description" content="为什么这样做？&amp;emsp;&amp;emsp;之前使用ssh连接服务器，然后借助jupyter notebook修改服务器代码，然后使用pdb和pdb.set_trace()在终端调试代码。切换成vs code的原因如下：   jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便； 查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明； 调试代码时，查看参数值时不是">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-69bf67bc383f7bc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-2916e9ff1df44497.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -93,10 +93,10 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-982335892fa0150d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-3d26acd7a1dc23fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-13c279eea9435af9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-12-16T12:44:11.289Z">
+<meta property="og:updated_time" content="2018-12-16T15:11:32.518Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vs code修改、调试服务器代码">
-<meta name="twitter:description" content="1. 为什么这样做？&amp;emsp;&amp;emsp;之前使用ssh连接服务器，然后借助jupyter notebook修改服务器代码，然后使用pdb和pdb.set_trace()在终端调试代码。切换成vs code的原因如下：   jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便； 查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明； 调试代码时，查看参数值">
+<meta name="twitter:description" content="为什么这样做？&amp;emsp;&amp;emsp;之前使用ssh连接服务器，然后借助jupyter notebook修改服务器代码，然后使用pdb和pdb.set_trace()在终端调试代码。切换成vs code的原因如下：   jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便； 查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明； 调试代码时，查看参数值时不是">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1974636-69bf67bc383f7bc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -307,7 +307,7 @@
       
 
       
-        <h3 id="1-为什么这样做？"><a href="#1-为什么这样做？" class="headerlink" title="1. 为什么这样做？"></a>1. 为什么这样做？</h3><p>&emsp;&emsp;之前使用<strong><code>ssh</code></strong>连接服务器，然后借助<strong><code>jupyter notebook</code></strong>修改服务器代码，然后使用<strong><code>pdb</code></strong>和<strong><code>pdb.set_trace()</code></strong>在终端调试代码。切换成vs code的原因如下：</p>
+        <h3 id="为什么这样做？"><a href="#为什么这样做？" class="headerlink" title="为什么这样做？"></a>为什么这样做？</h3><p>&emsp;&emsp;之前使用<strong><code>ssh</code></strong>连接服务器，然后借助<strong><code>jupyter notebook</code></strong>修改服务器代码，然后使用<strong><code>pdb</code></strong>和<strong><code>pdb.set_trace()</code></strong>在终端调试代码。切换成vs code的原因如下：</p>
 <blockquote>
 <ol>
 <li>jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便；</li>
@@ -315,13 +315,13 @@
 <li>调试代码时，查看参数值时不是特别方便。</li>
 </ol>
 </blockquote>
-<h3 id="2-设备及软件描述："><a href="#2-设备及软件描述：" class="headerlink" title="2.  设备及软件描述："></a>2.  设备及软件描述：</h3><blockquote>
+<h3 id="设备及软件描述："><a href="#设备及软件描述：" class="headerlink" title="设备及软件描述："></a>设备及软件描述：</h3><blockquote>
 <ol>
 <li>mac ,ubantu(16.04)</li>
 <li>visual studio code（1.29.1)</li>
 </ol>
 </blockquote>
-<h3 id="3-修改远程服务器代码"><a href="#3-修改远程服务器代码" class="headerlink" title="3.修改远程服务器代码"></a>3.修改远程服务器代码</h3><p>&emsp;&emsp;修改服务器代码使用vscode的插件<strong><code>sftp</code></strong>，安装完成后。配置过程如下：</p>
+<h3 id="修改远程服务器代码"><a href="#修改远程服务器代码" class="headerlink" title="修改远程服务器代码"></a>修改远程服务器代码</h3><p>&emsp;&emsp;修改服务器代码使用vscode的插件<strong><code>sftp</code></strong>，安装完成后。配置过程如下：</p>
 <blockquote>
 <ol>
 <li><strong><code>sftp.json</code></strong>文件。使用快捷键（mac) <strong><code>shift+cmd+p</code></strong> ,然后输入<strong><code>SFTP:Config</code></strong>,打开<strong><code>sftp.json</code></strong>文件。当然<strong><code>sftp.json</code></strong>中还可以配置属性<code>password</code>,<code>ignore</code>.具体查看sftp的说明。</li>
@@ -338,7 +338,7 @@
 </ol>
 </blockquote>
 <p><img src="https://upload-images.jianshu.io/upload_images/1974636-8454abbc03d562b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 3"></p>
-<h3 id="4-本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"><a href="#4-本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）" class="headerlink" title="4. 本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"></a>4. 本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）</h3><p>&emsp;&emsp;这里必须得意下：我在引擎上搜索了很久，要么是pycharm的方法 要么是visual studio 版本不一样，不能完全参考。（包括<a href="https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-code-on-remote-linux-machines?view=vs-2017" target="_blank" rel="noopener">官网</a>)。当然这里我还是主要参考<a href="https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-code-on-remote-linux-machines?view=vs-2017" target="_blank" rel="noopener">官方文档</a>和<a href="https://github.com/Microsoft/vscode-python/issues/2991" target="_blank" rel="noopener">resolver101757github的提问。</a>，像他们的成果表示深深的感谢。</p>
+<h3 id="本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"><a href="#本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）" class="headerlink" title="本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"></a>本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）</h3><p>&emsp;&emsp;这里必须得意下：我在引擎上搜索了很久，要么是pycharm的方法 要么是visual studio 版本不一样，不能完全参考。（包括<a href="https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-code-on-remote-linux-machines?view=vs-2017" target="_blank" rel="noopener">官网</a>)。当然这里我还是主要参考<a href="https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-code-on-remote-linux-machines?view=vs-2017" target="_blank" rel="noopener">官方文档</a>和<a href="https://github.com/Microsoft/vscode-python/issues/2991" target="_blank" rel="noopener">resolver101757github的提问。</a>，像他们的成果表示深深的感谢。</p>
 <blockquote>
 <ol>
 <li>设置launch.json。</li>
@@ -374,7 +374,7 @@
 <li>正确就可以成功启动本地调试。</li>
 </ol>
 </blockquote>
-<h3 id="5-可能的报错"><a href="#5-可能的报错" class="headerlink" title="5. 可能的报错"></a>5. 可能的报错</h3><blockquote>
+<h3 id="可能的报错"><a href="#可能的报错" class="headerlink" title="可能的报错"></a>可能的报错</h3><blockquote>
 <ol>
 <li><code>python socket.error: [Errno 98] Address already in use [closed]</code><br>&emsp;&emsp; ptvsd.enable_attach(address=(“10.0.3.0”,5678)) ,端口号太小，之前我就取22，改成大一些就OK，5678是默认的。</li>
 <li><code>pydev debugger: warning: trying to add breakpoint to file that does not exist</code><br>&emsp;&emsp;返回去看专题4的问题3（设置attach（敲黑板））</li>
@@ -510,7 +510,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-为什么这样做？"><span class="nav-number">1.</span> <span class="nav-text">1. 为什么这样做？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-设备及软件描述："><span class="nav-number">2.</span> <span class="nav-text">2.  设备及软件描述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-修改远程服务器代码"><span class="nav-number">3.</span> <span class="nav-text">3.修改远程服务器代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"><span class="nav-number">4.</span> <span class="nav-text">4. 本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-可能的报错"><span class="nav-number">5.</span> <span class="nav-text">5. 可能的报错</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么这样做？"><span class="nav-number">1.</span> <span class="nav-text">为什么这样做？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备及软件描述："><span class="nav-number">2.</span> <span class="nav-text">设备及软件描述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改远程服务器代码"><span class="nav-number">3.</span> <span class="nav-text">修改远程服务器代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"><span class="nav-number">4.</span> <span class="nav-text">本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可能的报错"><span class="nav-number">5.</span> <span class="nav-text">可能的报错</span></a></li></ol></div>
             
 
           </div>
