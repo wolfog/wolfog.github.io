@@ -86,14 +86,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="np.amin(a,axi中s)axis 的意思  首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。 如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。 axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/Users/rudy/hexo/source/_posts/axis_meaning/336DD1D3-FB28-4580-B1F8-B26D2700DFE2.png">
-<meta property="og:image" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/axis_meaning/FBB787F9-3B50-438D-BC94-1ADF8760A012.png">
-<meta property="og:image" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/axis_meaning/033E0C8A-8EDF-4B5C-A89B-38F9A5980229.png">
-<meta property="og:updated_time" content="2018-12-24T03:30:14.607Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-6a812f8c5db33805.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-936c8bc7e39d957b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1974636-906db7254bb9e4d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-24T03:38:06.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="numpy中方法amin的参数axis取值理解">
 <meta name="twitter:description" content="np.amin(a,axi中s)axis 的意思  首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。 如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。 axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是">
-<meta name="twitter:image" content="http://yoursite.com/Users/rudy/hexo/source/_posts/axis_meaning/336DD1D3-FB28-4580-B1F8-B26D2700DFE2.png">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1974636-6a812f8c5db33805.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -307,22 +307,22 @@
 <ol>
 <li>首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。</li>
 <li>如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。</li>
-<li>axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是求二维数组对应元素的最小值，最终的结果的shape 正好是3个一维数组，一个一维数组是4个元素。(下图中相同颜色的圈圈就是对应位置的元素比较）<br><img src="/Users/rudy/hexo/source/_posts/axis_meaning/336DD1D3-FB28-4580-B1F8-B26D2700DFE2.png" alt="pic1"></li>
+<li>axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是求二维数组对应元素的最小值，最终的结果的shape 正好是3个一维数组，一个一维数组是4个元素。(下图中相同颜色的圈圈就是对应位置的元素比较）<img src="https://upload-images.jianshu.io/upload_images/1974636-6a812f8c5db33805.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="二维数组对应元素比较"></li>
 </ol>
 </blockquote>
 <blockquote>
 <ol start="4">
-<li>同理axis 等于1时，在shape中表示的是1维数组，那么np.amin(a,1)方法就是求一维数组对应的元素的最小值。由于每个一维数组的元素是4个，有个二维数组，所以最终的shape是（2，4），下图中的黄色框框就是一维数组中对应的元素比较。<br><img src="axis_meaning/FBB787F9-3B50-438D-BC94-1ADF8760A012.png" alt="4d449acdecf285fcbd01664f687fcdcf"></li>
+<li>同理axis 等于1时，在shape中表示的是1维数组，那么np.amin(a,1)方法就是求一维数组对应的元素的最小值。由于每个一维数组的元素是4个，有个二维数组，所以最终的shape是（2，4），下图中的黄色框框就是一维数组中对应的元素比较。<br><img src="https://upload-images.jianshu.io/upload_images/1974636-936c8bc7e39d957b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一维数组对应元素比较"></li>
 </ol>
 </blockquote>
 <blockquote>
 <ol start="5">
-<li>同理axis等于2时，在shape中表示的一维数组中的元素，意思是求每一个一维数组元素中的最小值，而三维数组一个有2个二维数组，每个二维数组有3个一维数组，所以最终过得shape就是（2，3），图片中红色的框框就是一维数组元素的比较。<br><img src="axis_meaning/033E0C8A-8EDF-4B5C-A89B-38F9A5980229.png" alt="d34e9a9fd92d6987bc5c87d29df52d86"></li>
+<li>同理axis等于2时，在shape中表示的一维数组中的元素，意思是求每一个一维数组元素中的最小值，而三维数组一个有2个二维数组，每个二维数组有3个一维数组，所以最终过得shape就是（2，3），图片中红色的框框就是一维数组元素的比较。<br><img src="https://upload-images.jianshu.io/upload_images/1974636-906db7254bb9e4d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一维数组中元素比较"></li>
 <li>如果axis=(0,1) 那么就是先使用axis=0求最小值，shape为（3，4），然后在求这个二维数组中一维数组对应元素的最小值，shape为4。</li>
 </ol>
 </blockquote>
 <hr>
-<h4 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.random.randint(<span class="number">2</span>,<span class="number">40</span>,size=(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">print(a)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">0</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">1</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">2</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,(<span class="number">0</span>,<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.random.randint(<span class="number">2</span>,<span class="number">40</span>,size=(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">print(a)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">0</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">1</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">2</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,(<span class="number">0</span>,<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -468,7 +468,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#np-amin-a-axi中s-axis-的意思"><span class="nav-number">1.</span> <span class="nav-text">np.amin(a,axi中s)axis 的意思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码如下"><span class="nav-number">2.</span> <span class="nav-text">代码如下</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#np-amin-a-axi中s-axis-的意思"><span class="nav-number">1.</span> <span class="nav-text">np.amin(a,axi中s)axis 的意思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码如下："><span class="nav-number">2.</span> <span class="nav-text">代码如下：</span></a></li></ol></div>
             
 
           </div>
