@@ -79,13 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="np.amin(a,axi中s)axis 的意思  首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。 如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。 axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="np.amin(a,axi中s)axis 的意思  首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。 如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。 axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/axis_meaning/336DD1D3-FB28-4580-B1F8-B26D2700DFE2.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/axis_meaning/FBB787F9-3B50-438D-BC94-1ADF8760A012.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/axis_meaning/033E0C8A-8EDF-4B5C-A89B-38F9A5980229.png">
+<meta property="og:updated_time" content="2018-12-24T03:18:03.305Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="np.amin(a,axi中s)axis 的意思  首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。 如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。 axis等于0时，在shape中表示的是二维数组。那么np.amin(a,0)方法就是">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/axis_meaning/336DD1D3-FB28-4580-B1F8-B26D2700DFE2.png">
 
 
 
@@ -115,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/24/the-meaning-of-axis-in-numpy/">
 
 
 
 
 
-  <title>Hexo</title>
+  <title> | Hexo</title>
   
 
 
@@ -140,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,9 +221,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/24/the-meaning-of-axis-in-numpy/" itemprop="url">Untitled</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -298,9 +303,7 @@
       
 
       
-        
-          
-            <h4 id="np-amin-a-axi中s-axis-的意思"><a href="#np-amin-a-axi中s-axis-的意思" class="headerlink" title="np.amin(a,axi中s)axis 的意思"></a>np.amin(a,axi中s)axis 的意思</h4><blockquote>
+        <h4 id="np-amin-a-axi中s-axis-的意思"><a href="#np-amin-a-axi中s-axis-的意思" class="headerlink" title="np.amin(a,axi中s)axis 的意思"></a>np.amin(a,axi中s)axis 的意思</h4><blockquote>
 <ol>
 <li>首先不要使用什么横纵轴去理解，因为时间长了就忘记了,而且如果a是一个三维数组就没法解释了。</li>
 <li>如果a是三维数组。假设其shape是（2，3，4）。这个shape理解：2个二维数组，每个二维数组有3个一维数组，每个一维数组有4个元素，有了这个基础，下面就好理解了。</li>
@@ -320,8 +323,6 @@
 </blockquote>
 <hr>
 <h4 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.random.randint(<span class="number">2</span>,<span class="number">40</span>,size=(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">print(a)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">0</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">1</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,<span class="number">2</span>)</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">90</span>)</span><br><span class="line"><span class="keyword">print</span> np.amin(a,(<span class="number">0</span>,<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -338,208 +339,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/16/vsCode/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/16/vsCode/" itemprop="url">vsCode修改、调试服务器代码</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-16T20:19:26+08:00">
-                2018-12-16
-              </time>
+              <a href="/2018/12/16/vsCode/" rel="next" title="vsCode修改、调试服务器代码">
+                <i class="fa fa-chevron-left"></i> vsCode修改、调试服务器代码
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="为什么这样做？"><a href="#为什么这样做？" class="headerlink" title="为什么这样做？"></a>为什么这样做？</h3><p>&emsp;&emsp;之前使用<strong><code>ssh</code></strong>连接服务器，然后借助<strong><code>jupyter notebook</code></strong>修改服务器代码，然后使用<strong><code>pdb</code></strong>和<strong><code>pdb.set_trace()</code></strong>在终端调试代码。切换成vs code的原因如下：</p>
-<blockquote>
-<ol>
-<li>jupyter 中查看python方法时，各个类之间方法互相引用，跳转不方便；</li>
-<li>查看代码的时候，遇见不了解的方法时，无法时时看到方法的解释和参数说明；</li>
-<li>调试代码时，查看参数值时不是特别方便。</li>
-</ol>
-</blockquote>
-<h3 id="设备及软件描述："><a href="#设备及软件描述：" class="headerlink" title="设备及软件描述："></a>设备及软件描述：</h3><blockquote>
-<ol>
-<li>mac ,ubantu(16.04)</li>
-<li>visual studio code（1.29.1)</li>
-</ol>
-</blockquote>
-<h3 id="修改远程服务器代码"><a href="#修改远程服务器代码" class="headerlink" title="修改远程服务器代码"></a>修改远程服务器代码</h3><p>&emsp;&emsp;修改服务器代码使用vscode的插件<strong><code>sftp</code></strong>，安装完成后。配置过程如下：</p>
-<blockquote>
-<ol>
-<li><strong><code>sftp.json</code></strong>文件。使用快捷键（mac) <strong><code>shift+cmd+p</code></strong> ,然后输入<strong><code>SFTP:Config</code></strong>,打开<strong><code>sftp.json</code></strong>文件。当然<strong><code>sftp.json</code></strong>中还可以配置属性<code>password</code>,<code>ignore</code>.具体查看sftp的说明。</li>
-</ol>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-69bf67bc383f7bc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 1"></p>
-<blockquote>
-<p>2.同步本地代码到本地。命令为：<strong><code>SFTP:sync Remote -&gt; Local</code></strong></p>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-2916e9ff1df44497.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 2"></p>
-<blockquote>
-<ol start="3">
-<li>修改代码，保存后，同步到服务器。命令为：<strong><code>SFTP:sync Local -&gt; Remote</code></strong></li>
-</ol>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-8454abbc03d562b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 3"></p>
-<h3 id="本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"><a href="#本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）" class="headerlink" title="本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）"></a>本地调试远程代码（敲黑板，划重点，不认真看的考试不及格）</h3><p>&emsp;&emsp;这里必须得意下：我在引擎上搜索了很久，要么是pycharm的方法 要么是visual studio 版本不一样，不能完全参考。（包括<a href="https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-code-on-remote-linux-machines?view=vs-2017" target="_blank" rel="noopener">官网</a>)。当然这里我还是主要参考<a href="https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-code-on-remote-linux-machines?view=vs-2017" target="_blank" rel="noopener">官方文档</a>和<a href="https://github.com/Microsoft/vscode-python/issues/2991" target="_blank" rel="noopener">resolver101757github的提问。</a>，像他们的成果表示深深的感谢。</p>
-<blockquote>
-<ol>
-<li>设置launch.json。</li>
-</ol>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-28d15ebeb46a614b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 4"></p>
-<blockquote>
-<ol start="2">
-<li>选择python :attach.</li>
-</ol>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-982335892fa0150d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 5"></p>
-<blockquote>
-<ol start="3">
-<li>设置attach（敲黑板）。由于vscode 默认没有生成如下代码，会导致可以服务器监听到，但是无法做到本地调试，而且当添加断电时，总是提示<strong><code>pydev debugger: warning: trying to add breakpoint to file that does not exist:</code></strong>。我就是在这里苦苦寻找了一天半才找到解决办法。</li>
-</ol>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-3d26acd7a1dc23fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 6"></p>
-<blockquote>
-<ol start="6">
-<li>接下来已经配置完成。需要做的就是讲代码从服务器同步到本地，在代码开头（import之前）添加如下代码。然后在将代码同步到服务器。</li>
-</ol>
-</blockquote>
-<pre><code>import ptvsd   # 使用pip 就可以安装，网上有人说需要版本小于4.1.3，亲测4.2.0没问题。
-import time
-ptvsd.enable_attach(address=(&quot;10.0.3.0&quot;,5678))  # 这里的端口号大一些，大于1024，否则也会    报错。
-ptvsd.wait_for_attach()
-time.sleep(1)
-</code></pre><blockquote>
-<ol start="7">
-<li>在vscode终端使用ssh 连接上服务器，然后运行代码，在vscode 中点击调试按钮（杀虫剂图标）,选择上面设置的python：attach，点击运行按钮。如下图：</li>
-</ol>
-</blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/1974636-13c279eea9435af9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pic 7"></p>
-<blockquote>
-<ol start="8">
-<li>正确就可以成功启动本地调试。</li>
-</ol>
-</blockquote>
-<h3 id="可能的报错"><a href="#可能的报错" class="headerlink" title="可能的报错"></a>可能的报错</h3><blockquote>
-<ol>
-<li><code>python socket.error: [Errno 98] Address already in use [closed]</code><br>&emsp;&emsp; ptvsd.enable_attach(address=(“10.0.3.0”,5678)) ,端口号太小，之前我就取22，改成大一些就OK，5678是默认的。</li>
-<li><code>pydev debugger: warning: trying to add breakpoint to file that does not exist</code><br>&emsp;&emsp;返回去看专题4的问题3（设置attach（敲黑板））</li>
-</ol>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -549,10 +370,11 @@ time.sleep(1)
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -560,6 +382,10 @@ time.sleep(1)
 
 
           
+
+  
+
+
 
         </div>
         
@@ -580,8 +406,17 @@ time.sleep(1)
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -623,6 +458,22 @@ time.sleep(1)
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#np-amin-a-axi中s-axis-的意思"><span class="nav-number">1.</span> <span class="nav-text">np.amin(a,axi中s)axis 的意思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码如下"><span class="nav-number">2.</span> <span class="nav-text">代码如下</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -756,6 +607,10 @@ time.sleep(1)
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
